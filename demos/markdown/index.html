@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js markdown editor example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <!-- Delete ".min" for console warnings in development -->
+    <script src="../../dist/vue.min.js"></script>
+</head>
+<body>
+
+    <div id="editor">
+        <textarea :value="input" @input="update"></textarea>
+        <div v-html="compiledHtml"></div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
