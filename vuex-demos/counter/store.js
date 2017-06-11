@@ -18,7 +18,6 @@ const mutations = {
     },
 
     decrement (state) {
-        "use strict";
         state.count--;
     }
 }
